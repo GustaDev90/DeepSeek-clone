@@ -23,19 +23,18 @@ const Cards: React.FC = () => {
   return (
     <div className="md:flex gap-10">
       {cards.map((items, index) => (
-         <div
-           className="mt-16 bg-white rounded-2xl w-[350px] h-[150px] shadow-xl border-2 border-transparent hover:border-blue-500 transition-all duration-300 cursor-pointer"
-           key={index}
-         >
-          <Link href={items.link}>
+        <Link href={items.link} key={index} className="block">
+          <div
+            className="mt-16 bg-white rounded-2xl w-[350px] h-[150px] shadow-xl border-2 border-transparent hover:border-blue-500 transition-all duration-300 cursor-pointer"
+          >
             <div className="mt-8 ml-8 text-gray-500">
               <h1 className="font-bold text-xl text-blue-600">{items.title}</h1>
               {items.desc.split("\n").map((line, lineIndex) => (
                 <div key={lineIndex}>{line}</div>
               ))}
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
       ))}
     </div>
   );
