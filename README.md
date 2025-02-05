@@ -1,6 +1,6 @@
 # 🧠 DeepSeek Clone
 
-**DeepSeek Clone**, é uma aplicação eficiente desenvolvida em Next.js que simula o site do DeepSeek. 🦾
+**DeepSeek Clone**, é uma aplicação desenvolvida em Next.js que simula o site do DeepSeek. 🦾
 
 ---
 
